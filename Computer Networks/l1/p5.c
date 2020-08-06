@@ -8,22 +8,16 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+
+unsigned LtoB(unsigned int x){
+	return (((x>>24) & 0x000000FF) | ((x>>8) & 0x0000FF00) | ((x<<8) & 0x00FF0000) | ((x<<24) & 0xFF000000));
+}
+
 int main(){
 	srand(time(0));
 	
-	unsigned int x = 0x76543210;
-	char *c = (char*) &x;
-
-	printf ("*c is: 0x%x\n", *c);
-	if (*c == 0x10)
-	{
-	printf ("Underlying architecture is little endian. \n");
-	}
-	else
-	{
-	 printf ("Underlying architecture is big endian. \n");
-	}
-	
-	
+	int Little_int = 0xAABBCCDD;
+	printf("L_e = 0x%X\n", Little_int);
+	printf("L_e = 0x%X\n", LtoB(Little_int));
 	return 0;
 }
