@@ -7,11 +7,12 @@
 #include<stdlib.h>
 #include<time.h>
 #include<string.h>
+typedef long long ll;
 int gcd(int a,int b){
 	if(b==0){
 		return a;
 	}
-	return gcd(a%b,b);
+	return gcd(b,b%a);
 }
 int main(){
 	srand(time(0));
