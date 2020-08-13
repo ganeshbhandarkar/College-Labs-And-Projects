@@ -20,7 +20,29 @@
  * 
  * 
  */
-
+// {
+// 	"version": "2.0.0",
+// 	"tasks": [
+// 		{
+// 			"type": "shell",
+// 			"label": "C/C++: clang build active file",
+// 			"command": "/usr/bin/clang",
+// 			"args": [
+// 				"-g",
+// 				"${file}",
+// 				"-o",
+// 				"${fileDirname}/${fileBasenameNoExtension}"
+// 			],
+// 			"options": {
+// 				"cwd": "${workspaceFolder}"
+// 			},
+// 			"problemMatcher": [
+// 				"$gcc"
+// 			],
+// 			"group": "build"
+// 		}
+// 	]
+// }
 
 #include <stdio.h>
 
