@@ -8,17 +8,21 @@
 #include<time.h>
 #include<string.h>
 typedef long long ll;
-int gcd(int a,int b){
-	if(b==0){
-		return a;
-	}
-	return gcd(b,b%a);
+int c=0;
+
+int gcd(int a, int b) 
+{ 
+	c++;
+	if (a == 0) 
+		return b; 
+	return gcd(b % a, a); 
 }
 int main(){
 	srand(time(0));
 	
 	int a,b;scanf("%d%d",&a,&b);
 	int ans = gcd(a,b);
-	printf("%d",ans);	
+	printf("%d %d",ans,c);
+		
 	return 0;
 }
