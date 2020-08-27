@@ -7,7 +7,7 @@
 int main(){
 
 
-		int fd,res;
+	int fd,res;
         fd=socket(AF_INET, SOCK_DGRAM, 0);
                 if(fd==-1)
                 printf("Socket not created error\n");
@@ -30,14 +30,19 @@ int main(){
         y.sin_family=AF_INET;
         y.sin_port=ntohs(6005);
         y.sin_addr.s_addr=INADDR_ANY;
-        
-        if(sendto(fd,"Hello from Client",30,0,(struct sockaddr *)&y, sizeof y) == -1) 
-        {
-                perror("sendto");
-                exit(1);
+        int num;
+        for(int i=0;i<5;i++){
+        	scanf("%d",&num);
+        	if(sendto(fd,&num,5,0,(struct sockaddr *)&y, sizeof y) == -1) 
+        	{
+                	perror("sendto");
+                	exit(1);
+        	}
         }
+        
         printf("Send Successfully");
         close(fd);
         
 	return 0;
 }
+
