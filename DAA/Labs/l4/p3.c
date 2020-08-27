@@ -7,7 +7,7 @@
 #include<stdlib.h>
 #include<time.h>
 int BS(int l,int e,int *a,int no){
-	if(no<=a[0])return a[o];
+	if(no<=a[0])return a[0];
 	if(no>=a[n-1])return a[n-1];
 	int m =0;
 	while(l<e){
