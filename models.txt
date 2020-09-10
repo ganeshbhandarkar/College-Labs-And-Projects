@@ -1,0 +1,48 @@
+// Waterfall
+1
+The Waterfall Model was the first Process Model to be introduced.
+It is very simple to understand and use.
+In a waterfall model, each phase must be completed before the next phase can begin and there is no overlapping between the phases.
+The waterfall Model illustrates the software development process in a linear sequential flow.
+
+2
+It is also known as software-life cycle, classical life cycle  model. 
+this model is used widely. 
+It suggests a systematic sequential approach from requirement analysis up to support phase.
+A product delivered after the linear sequence is complete.
+
+Evolutionary Models
+-> Prototyping model
+//
+1
+The prototyping model is a systems development method in which a prototype is built,
+tested and then reworked as necessary until an outcome is achieved from which product can be developed.
+This model works best in scenarios where not all of the project requirements are known in detail ahead of time.
+It is an iterative, trial-and-error process that takes place between the developers and the users.
+
+2
+Generally in this model, developers listen to the customer, design a prototype, and then test the prototype.
+The procedure is repeated until all the requirements of the system are identified, 
+and a complex system can be designed.
+It is an effective paradigm for software engineering. 
+
+Spiral model
+//
+1
+The spiral model combines the idea of iterative development with the systematic, 
+controlled aspects of the waterfall model. 
+This Spiral model is a combination of iterative development process model and sequential linear development model, 
+i.e. the waterfall model with a very high emphasis on risk analysis.
+It allows incremental releases of the product or incremental refinement through each iteration around the spiral.
+
+2
+The radial dimension of the model represents cumulative costs, 
+Each path around the spiral is indicative of increased costs.
+The angular dimension represents the progress made in completing each cycle.
+Each loop of the spiral from X-axis clockwise through 360 degrees, represents one phase.
+One phase is split roughly into four sectors:
+	Planning: determination of objectives & 		constraints.
+	Risk Analysis: analyze alternatives & attempt 	to identify & resolve the risks involved.
+	Development: product development & testing.
+	Assessment: customer evaluation.
+
