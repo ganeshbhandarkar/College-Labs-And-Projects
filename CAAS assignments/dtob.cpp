@@ -1,22 +1,20 @@
 // Created by ganesh bhandarkar
 #include <bits/stdc++.h>
 
-#define db1(x) cout<<#x<<"="<<x<<'\n'
-#define db2(x,y) cout<<#x<<"="<<x<<","<<#y<<"="<<y<<'\n'
-#define db3(x,y,z) cout<<#x<<"="<<x<<","<<#y<<"="<<y<<","<<#z<<"="<<z<<'\n'
-#define rep(i,n) for(int i=0;i<(n);++i)
-#define repA(i,a,n) for(int i=a;i<=(n);++i)
-#define repD(i,a,n) for(int i=a;i>=(n);--i)
-
 using namespace std;
 using ll = long long;
-
+#define _DEBUG
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    int n;cin>>n;
+
+    #ifdef _DEBUG
+	int tt = clock();
+	#endif
+	
+	int n;cin>>n;
     string ans = "";
     while(n>0){
     	if(n&1)ans += '1';
@@ -25,5 +23,11 @@ int main()
     }
     reverse(ans.begin(),ans.end());
     cout<<ans;
+    
+	#ifdef _DEBUG
+		cerr << "\nTIME = " << clock() - tt << endl;
+		tt = clock();
+	#endif
+
     return 0;
 }
