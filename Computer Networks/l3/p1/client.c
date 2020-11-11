@@ -7,7 +7,7 @@
 int main(){
 
 
-		int fd,res;
+	int fd,res;
         fd=socket(AF_INET, SOCK_DGRAM, 0);
                 if(fd==-1)
                 printf("Socket not created error\n");

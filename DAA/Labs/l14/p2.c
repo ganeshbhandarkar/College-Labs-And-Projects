@@ -57,9 +57,9 @@ int main(){
         	if(v[p][i] == 1){
         		if(vis[ i ] == 0)
 	            {
-	                d[ i] = d[ p ]+1;                 
+	                d[i] = d[p]+1;                 
 	                 enqueue(i);
-	                 vis[ i ] = 1;
+	                 vis[i] = 1;
 	  			}
         	}
             

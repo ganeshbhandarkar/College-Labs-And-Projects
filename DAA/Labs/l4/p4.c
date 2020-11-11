@@ -30,3 +30,38 @@ int main(){
 	printf("index : %d weight : %d",ans,a[hoo]);
 	return 0;
 }
+***********************************************************************************
+***********************************************************************************
+#include<stdio.h>
+int main()
+{
+	int n,i,key=-1,weight;
+	printf("No of bags : ");
+	scanf("%d",&n);
+	int arr[n][2], sumarray[n];
+	for(i=0;i<n;i++)
+	{
+		printf("Enter marble weights in the Bag %d :\n",i+1);
+		scanf("%d %d",&arr[i][0],&arr[i][1]);
+		printf("\n");
+	}
+	printf("Enter weight to be searched : ");
+	scanf("%d",&weight);
+	for(i = 0; i < n; i++)
+	{
+		sumarray[i]=arr[i][0]+arr[i][1];
+		if(sumarray[i]==weight)
+		{
+			key = i;
+		}
+	}
+	if(key<0)
+	{
+		printf("Not Found");
+	}
+	else
+	{
+		printf("Marble weights are %d %d found in bag %d",arr[key][0],arr[key][1],key+1);
+	}
+	return 0;
+}
