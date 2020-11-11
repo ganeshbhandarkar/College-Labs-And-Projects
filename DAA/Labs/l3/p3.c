@@ -3,27 +3,49 @@
  *  Date: 12.08.2020 16:47:10 IST
  */
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
-#include<string.h>
-int main(){
-	srand(time(0));
-	
-	char pass[100];
-	scanf("%s", pass);
-	int len = strlen(pass); 
-	int ans[26];
-	for(int i=0;i<len;i++) ans[i]=0;
-	for(int i=0;pass[i]!='\0';i++){
-		if((pass[i]>=97 && pass[i]<=122) || pass[i]==64 || pass[i]==35){
-				ans[pass[i]]++;
-		}
+#include <stdio.h>
+/**program for matching a password with the following rules.password must consist of alphabets and special
+ symbols @ or #.any password will declared as matched if its a permutation of original password set by the user.
+ **/
+
+void pass(char *s1,char *s2)
+{
+	int i;
+	int dp1[256]={0};
+	int dp2[256]={0};
+	int test=1;
+
+	for(i=0;s1[i]&&s2[i];i++)
+	{
+		dp1[s1[i]]++;
+		dp2[s2[i]]++;
 	}
-	for(int i=0;i<26;i++){
-		printf("%d ",ans[i]);
-	}
-	
-	
+
+	if (s1[i] || s2[i]) //lengths are of different length
+        test=0; 
+  
+    // Compare count arrays 
+    for (i = 0; i < 256; i++) 
+        if (dp1[i] != dp2[i]) 
+            test=0;; 
+  
+    if(test>0)
+     printf("\nmatched password..");
+
+ 	else
+ 		printf("\n not matched..");
+}
+
+
+int main()
+{
+	char s1[100];
+	char s2[100];
+	printf("\n enter valid password:");
+	scanf("%s",&s1);
+	printf("\n enter password to check:");
+	scanf("%s",&s2);
+
+	pass(s1,s2);
 	return 0;
 }
