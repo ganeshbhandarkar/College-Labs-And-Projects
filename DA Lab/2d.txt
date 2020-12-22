@@ -1,0 +1,9 @@
+manjusha pandey9:39 AM
+Q1. You have identify the activities to be performed in DALC for the following set of business objectives to be achieved  
+a) To find the most sold product in e-commerce application
+manjusha pandey9:41 AM
+b) To find the most expensive delivery costs levied by a product in the e-commerce application 
+manjusha pandey9:42 AM
+c) To find the worst performing  assests in a banking organization
+manjusha pandey9:44 AM
+d)  To find out the best gaming application out of all the applications freely available
