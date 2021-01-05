@@ -1,0 +1,1 @@
+jt -t oceans16 -f fira -fs 13 -nf ptsans -nfs 12 -N -kl -cursw 3 -cursc r -cellw 95% -T -ofs 14

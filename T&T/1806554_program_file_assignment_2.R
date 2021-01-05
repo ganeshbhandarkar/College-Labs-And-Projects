@@ -1,22 +1,19 @@
-v <- 10L
+{v <- as.integer(readline(prompt = "enter: "))
 if (v>0){
   print("pos")
 }else{
   print("Neg")
-}
+}}
 
-num <- as.double(readline(prompt="Enter a number: "))
+{num <- as.double(readline(prompt="Enter : "))
 if(num > 0) {
   print("Positive number")
-} else {
-  if(num == 0) {
-    print("Zero")
-  } else {
-    print("Negative number")
+}else {
+  print("Negative number")
   }
 }
 
-num <- as.double(readline(prompt="Enter a number: "))
+{num <- as.double(readline(prompt="Enter: "))
 if(num %% 4 == 0) {
   if(num %% 100 == 0){
     if(num %% 400 == 0){
@@ -29,17 +26,17 @@ if(num %% 4 == 0) {
   }
 } else{
   print(paste(num,"is not leap yr" ))
-}
+}}
 
-n1 <- as.double(readline(prompt="Enter a number 1: "))
+{n1 <- as.double(readline(prompt="Enter a number 1: "))
 n2 <- as.double(readline(prompt="Enter a number 2: "))
 if(n1>n2){
   print(paste(n1,"is greater than ",n2))
 }else{
   print(paste(n2,"is greater than ",n1))
-}
+}}
 
-n <- as.double(readline(prompt="Enter a number "))
+{n <- as.double(readline(prompt="Enter a number "))
 x <- n %% 10
 y <- n / 100
 y = floor(y)
@@ -47,15 +44,15 @@ if(x == y){
 print(paste(n, "is palindrome"))
 }else{
   print(paste(n, "is not palindrome"))
-}
+}}
 
 
-a <- as.double(readline(prompt="Enter a sub 1 "))
+{a <- as.double(readline(prompt="Enter a sub 1 "))
 b <- as.double(readline(prompt="Enter a sub 2 "))
 c <- as.double(readline(prompt="Enter a sub 3 "))
 
-x = a+b+c
-y = (a+b+c)/3
+x <- a+b+c
+y <- (a+b+c)/3
 print(paste(x,"sum",y,"average"))
 if(sum >200 && sum <=300){
   print("O grade")
@@ -63,30 +60,30 @@ if(sum >200 && sum <=300){
   print("E Grade")
 }else{
   print("A Grade")
-}
+}}
 
-h = 6  
-w = 7
-r = 3
-var3 = "s"   
+{
+  h = as.integer(readline())  
+  w = as.integer(readline())
+  r = as.integer(readline())
+  val3 = as.character(readline(prompt = "enter: "))   
   result = switch(   
     val3,   
     "c"= cat("cir area =", 3.14 * r*r),   
     "r"= cat("ret area =", h * w),   
     "t"= cat("tri area = ", 1/2 * h * w),
   )
+}
 
-h = 6  
-w = 7
-r = 3
-var3 = "s"   
-result = switch(   
-  val3,   
-  "c"= cat("cir area =", 3.14 * r*r),   
-  "r"= cat("ret area =", h * w),   
-  "t"= cat("tri area = ", 1/2 * h * w),
-)
-
+{
+  val3 = as.character(readline(prompt = "enter: "))   
+  result = switch(   
+    val3,   
+    "r"= cat("RED"),   
+    "g"= cat("GREEN"),   
+    "b"= cat("BLUE"),
+  )
+}
 
 
 {n <- as.integer(readline(prompt = "ent"))
@@ -125,7 +122,7 @@ result = switch(
 }
 
 {
-  num = as.integer(readline(prompt="Enter a number: "))
+  num = as.integer(readline(prompt="Enter : "))
   flag = 0
   if(num > 1) {
     flag = 1
@@ -164,9 +161,7 @@ result = switch(
 }
 
 {
-  x <- 0
   sum <- 0
-  finsum <-0
   n <- as.integer(readline(prompt = "enter: "))
   for(i in 1:n){
     sum = sum + i*(i+1)/2
