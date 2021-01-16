@@ -1,0 +1,26 @@
+manjusha pandey9:40 AM
+identify the data sources
+aggregate the data sources 
+ASHISH RAUT9:41 AM
+Review the raw data
+manjusha pandey9:41 AM
+review the data
+identify the data structures and tools 
+scope and infrastructure 
+manjusha pandey9:42 AM
+aim was to find out the topper of the school
+Exam cell 
+Placement cell 
+Subject teachers 
+manjusha pandey9:44 AM
+Aggeration : drop the subject teachers as data source
+data  array 
+manjusha pandey9:46 AM
+soft copy format 
+ASHISH RAUT9:48 AM
+Ma'am please explain 5th point again in this context
+manjusha pandey9:49 AM
+problem statement is to find out the best performing employee in an organization 
+2. Find the best performing resource in the organization 
+. Find the most profit generating product of an organization 
+4.  Find the most loss generating product of an organization
